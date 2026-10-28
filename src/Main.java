@@ -73,6 +73,7 @@ public class Main {
     private static void addReminder(Scanner in, ReminderCalendar calendar) {
         System.out.print("Заголовок: ");
         String title = in.nextLine().trim();
+        if (title.isEmpty()) title = "Без названия";
         System.out.print("Текст: ");
         String message = in.nextLine().trim();
 
